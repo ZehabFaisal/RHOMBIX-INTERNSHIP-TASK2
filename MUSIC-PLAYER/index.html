@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player Website </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="music-box">
+        <h1 style="text-decoration: underline; color: black;"> MUSIC PLAYER </h1>
+        <div id="tbox">
+            <div class="toogle" id="toogle"> </div>
+        </div>
+
+        <div class="list" id="list">
+            <a href="audio1.mp3" download id="link"> <i class="fas fa-file-download"></i> Download </a>
+        </div>
+
+        <h1 id="heading">Song 1</h1>
+
+        <h3 id="sub-heading">Singer 1</h3>
+
+        <div class="song-img">
+            <img src="pic-1.jpg" alt="pic" id="song-img">
+        </div>
+
+        <audio id="audio">
+            <source src="audio1.mp3 " type="audio/mp3">
+        </audio>
+
+        <div class="progress_bar" id="progress_bar">
+            <div class="progress" id="progress"></div>
+            <div class="box" id="box"></div>
+        </div>
+
+        <div class="duration">
+            <div class="mutebtn" id="mutebtn">
+                <i class='fas fa-volume-up'> </i>
+            </div>
+
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" 
+                style="width: 100px; margin: 0 10px;">
+
+            <div class="time">
+                <p id="current">0:00</p> / <p id="total"> 0:00 </p>
+            </div>
+        </div>
+
+        <div class="controls">
+           <div class="prev">
+                <img src="prev.png" alt="Prev button" id="prev">
+            </div>
+
+            <div class="play">
+                <img src="play.png" alt="Play button" id="play">
+            </div>
+
+            <div class="next">
+                <img src="next.png" alt="Next button" id="next">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./app.js"> </script>
+</body>
+</html>
